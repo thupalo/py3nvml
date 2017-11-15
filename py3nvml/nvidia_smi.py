@@ -193,7 +193,7 @@ def GetClocksThrottleReasons(handle):
 # Converts errors into string messages
 #
 def handleError(err):
-    if (err.value == NVML_ERROR_NOT_SUPPORTED):
+    if (err == NVML_ERROR_NOT_SUPPORTED):
         return "N/A"
     else:
         return err.__str__()
